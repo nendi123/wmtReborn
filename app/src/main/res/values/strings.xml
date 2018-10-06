@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">WMT Mobile</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="next">SELANJUTNYA</string>
+    <string name="skip">LEWATI</string>
+    <string name="start">MENGERTI</string>
+
+    <string name="slide_1_title">Hallo</string>
+    <string name="slide_1_desc">Selamat datang di mobiWMT aplikasi pencatatan meteran air</string>
+
+    <string name="slide_2_title">Cara Pengujian</string>
+    <string name="slide_2_desc">Hal yang perlu ada : </string>
+
+    <string name="slide_3_title"></string>
+    <string name="slide_3_desc">Data Pribadi dan perusahaan dapat dilihat di Menu Profil</string>
+
+    <string name="agreement">Saya setuju dengan Pengujian.</string>
+    <string name="clear_pad">Bersikah</string>
+    <string name="save_signature">Simpan</string>
+
+    <string-array name="german_familienname">
+        <item>Pilih</item>
+        <item>Barindo</item>
+        <item>Actaris</item>
+        <item>Itron</item>
+        <item>Air Mas</item>
+        <item>RVT</item>
+        <item>Fuji</item>
+        <item>Pump</item>
+        <item>Aquindo</item>
+        <item>YG</item>
+        <item>Inco Meter</item>
+        <item>Linflow</item>
+        <item>Lainnya</item>
+    </string-array>
+</resources>

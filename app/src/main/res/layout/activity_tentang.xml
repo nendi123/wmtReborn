@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_satu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nendi.wmtreborn.TentangActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_satu"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/toolbar_satu"
+        android:orientation="vertical">
+           <WebView
+               android:id="@+id/wv_about"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"></WebView>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pgb"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"/>
+
+</RelativeLayout>

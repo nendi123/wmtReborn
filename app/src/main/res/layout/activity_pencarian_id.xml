@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#e5e5e5"
+    tools:context=".PencarianIDActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_satu"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/alte"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <com.miguelcatalan.materialsearchview.MaterialSearchView
+        android:id="@+id/mysearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.miguelcatalan.materialsearchview.MaterialSearchView>
+
+    <android.support.v7.widget.CardView
+
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/mysearch"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="83dp"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="5dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:id="@+id/Lpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:fontFamily="@font/alte"
+                    android:padding="8dp"
+                    android:text="Nama" />
+
+                <TextView
+                    android:id="@+id/txtNama"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/alte"
+                    android:padding="8dp"
+                    android:text="Nama" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Lalamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/Lpassword"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:fontFamily="@font/alte"
+                    android:padding="8dp"
+                    android:text="Alamat" />
+
+                <TextView
+                    android:id="@+id/txtAlamat"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/alte"
+                    android:padding="8dp"
+                    android:text="Alamat" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Lmerk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/Lalamat"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:fontFamily="@font/alte"
+                    android:padding="8dp"
+                    android:text="Merk" />
+
+                <TextView
+                    android:id="@+id/txtMerk"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/alte"
+                    android:padding="8dp"
+                    android:text="Merk" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Lstatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/Lmerk"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:fontFamily="@font/alte"
+                    android:padding="8dp"
+                    android:text="Meteran Sesuai" />
+
+                <Switch
+                    android:id="@+id/switch1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textOff="Tidak"
+                    android:textOn="Iya"
+                    android:checked="true"
+                    android:layout_margin="8dp" />
+                <TextView
+                    android:id="@+id/txtStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:fontFamily="@font/alte"
+                    android:padding="8dp"
+                    android:textColor="@color/colorToolbar"
+                    android:text="Sesuai" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LPengujian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/Lstatus"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:fontFamily="@font/alte"
+                    android:padding="8dp"
+                    android:text="Status" />
+                <TextView
+                    android:id="@+id/txtPengujian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:fontFamily="@font/alte"
+                    android:padding="8dp"
+                    android:textColor="@color/colorToolbar"
+                    android:text="Belum di Uji" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/Lpassword"
+                android:layout_below="@+id/LPengujian"
+                android:text="Uji"
+                android:textColor="@color/white"
+                android:theme="@style/MyButton" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/CardMeteran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:visibility="invisible"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/Lmeteran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:fontFamily="@font/alte"
+                    android:padding="8dp"
+                    android:text="Meteran" />
+
+                <Spinner
+                    android:padding="18dp"
+                    android:layout_margin="8dp"
+                    android:id="@+id/sp_name"
+                    android:entries="@array/german_familienname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></Spinner>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/Llainnya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Lmeteran">
+
+                <EditText
+                    android:id="@+id/eLainnya"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/round"
+                    android:inputType="text"
+                    android:hint="Lainnya"
+                    android:layout_marginStart="10dp"
+                    android:paddingStart="10dp"
+                    android:padding="8dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LserialNumber"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/Llainnya"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="121dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/alte"
+                    android:text="Serial Number" />
+                <EditText
+                    android:id="@+id/eSerialNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/round"
+                    android:inputType="numberDecimal"
+                    android:hint="Serial Number"
+                    android:layout_marginStart="10dp"
+                    android:paddingStart="10dp"
+                    android:padding="8dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="58dp" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="99dp" />
+</RelativeLayout>

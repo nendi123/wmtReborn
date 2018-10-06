@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorToolbar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="115dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/img_width_height"
+            android:layout_height="@dimen/img_width_height"
+            android:src="@drawable/ic_pengujian" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/slide_2_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/slide_title"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="@dimen/desc_padding"
+                android:paddingRight="@dimen/desc_padding"
+                android:text="Hal yang perlu disedikan : "
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/slide_desc" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/desc_padding"
+                android:paddingRight="@dimen/desc_padding"
+                android:text="1. Kode Pelanggan"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/desc_tutorial"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/desc_padding"
+                android:paddingRight="@dimen/desc_padding"
+                android:text="2. Koneksi Internet"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/desc_tutorial"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/desc_padding"
+                android:paddingRight="@dimen/desc_padding"
+                android:text="3. WMT"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/desc_tutorial"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/desc_padding"
+                android:paddingRight="@dimen/desc_padding"
+                android:text="4. Meteran yang diuji"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/desc_tutorial"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="@dimen/desc_padding"
+                android:paddingRight="@dimen/desc_padding"
+                android:text="Langkah - langkah : "
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/slide_desc" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/desc_padding"
+                android:paddingRight="@dimen/desc_padding"
+                android:text="1. Pilih Menu Pengujian"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/desc_tutorial"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/desc_padding"
+                android:paddingRight="@dimen/desc_padding"
+                android:text="2. Tekan tombol Search pada pojok kanan atas"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/desc_tutorial"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/desc_padding"
+                android:paddingRight="@dimen/desc_padding"
+                android:text="3. Masukkan Nomor Pelanggan yang akan diuji"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/desc_tutorial"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/desc_padding"
+                android:paddingRight="@dimen/desc_padding"
+                android:text="4. Jika ada, data pelanggan muncul"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/desc_tutorial"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/desc_padding"
+                android:paddingRight="@dimen/desc_padding"
+                android:text="5. Cek meteran yang tertera dengan yang di data"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/desc_tutorial"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/desc_padding"
+                android:paddingRight="@dimen/desc_padding"
+                android:text="6. Tekan tombol Search pada pojok kanan atas"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/desc_tutorial"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/desc_padding"
+                android:paddingRight="@dimen/desc_padding"
+                android:text="7. Jika berbeda silahkan isi data meteran yang terpasang"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/desc_tutorial"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/desc_padding"
+                android:paddingRight="@dimen/desc_padding"
+                android:text="8. Tekan Tombol Uji"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/desc_tutorial"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/desc_padding"
+                android:paddingRight="@dimen/desc_padding"
+                android:textSize="@dimen/desc_tutorial"
+                android:text="9. Masukkan
+  - Stand
+  - Counter Awal
+  - Counter Akhir
+  - WMT"
+                android:textColor="@android:color/white" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/desc_padding"
+                android:paddingRight="@dimen/desc_padding"
+                android:text="10. Jika sudah sesuai, tekan Hitung"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/desc_tutorial"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/desc_padding"
+                android:paddingRight="@dimen/desc_padding"
+                android:text="11. Jika sudah disetujui pelanggan Tekan Simpan"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/desc_tutorial"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/desc_padding"
+                android:paddingRight="@dimen/desc_padding"
+                android:text="12. Input Tanda Tangan Pelanggan"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/desc_tutorial"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/desc_padding"
+                android:paddingRight="@dimen/desc_padding"
+                android:text="13. Foto Meteran Pelanggan"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/desc_tutorial"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/desc_padding"
+                android:paddingRight="@dimen/desc_padding"
+                android:text="14. Selesai"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/desc_tutorial"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

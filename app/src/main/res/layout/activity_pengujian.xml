@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#e5e5e5"
+    android:scrollbars="none" >
+
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/CardMaster"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    app:contentPadding="10dp">
+
+                    <TextView
+                        android:id="@+id/txtmaster"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:fontFamily="@font/alte"
+                        android:text="Counter Meter Air"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/LStand"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txtStand"
+                                android:layout_width="102dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:padding="10dp"
+                                android:text="Stand"
+                                android:fontFamily="@font/alte"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                            <EditText
+                                android:id="@+id/eStand"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/round"
+                                android:inputType="numberDecimal"
+                                android:padding="8dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LUji"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/LStand"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txtCounterAwal"
+                                android:layout_width="102dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:padding="10dp"
+                                android:text="Counter Awal"
+                                android:fontFamily="@font/alte"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                            <EditText
+                                android:id="@+id/eCounterA"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/round"
+                                android:inputType="numberDecimal"
+                                android:padding="8dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LujiAkhir"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/LUji"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="102dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:padding="8dp"
+                                android:text="Counter Akhir"
+                                android:fontFamily="@font/alte"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                            <EditText
+                                android:id="@+id/eCounterAkh"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/round"
+                                android:inputType="numberDecimal"
+                                android:padding="8dp" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:id="@+id/CardAngkaMeter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/CardMaster"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    app:contentPadding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/txtuji"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:fontFamily="@font/alte"
+                            android:text="Volume"/>
+
+                        <LinearLayout
+                            android:id="@+id/LTekanan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txtTekanan"
+                                android:layout_width="102dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:padding="10dp"
+                                android:text="Tekanan"
+                                android:fontFamily="@font/alte"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                            <EditText
+                                android:id="@+id/eTekanan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/round"
+                                android:inputType="numberDecimal"
+                                android:padding="8dp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/LmasterHasil"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/LTekanan"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/hasilmaster"
+                                android:layout_width="102dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:padding="8dp"
+                                android:text="WMT"
+                                android:fontFamily="@font/alte"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+                            <EditText
+                                android:id="@+id/ehasilmaster"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/round"
+                                android:inputType="numberDecimal"
+                                android:padding="8dp" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/LUjiMeter"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/LmasterHasil"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/hasilUjiMeter"
+                                android:layout_width="102dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:padding="8dp"
+                                android:text="Meter Air"
+                                android:fontFamily="@font/alte"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+                            <EditText
+                                android:id="@+id/eHasilUjiMeter"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/round"
+                                android:editable="false"
+                                android:inputType="numberDecimal"
+                                android:padding="8dp" />
+
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:id="@+id/CardUji"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/CardAngkaMeter"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    app:contentPadding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/txtHasil"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:fontFamily="@font/alte"
+                            android:text="Deviasi"/>
+
+
+
+                        <LinearLayout
+                            android:id="@+id/LhasilUji"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/hasiluji"
+                                android:layout_width="102dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:padding="8dp"
+                                android:text="Volume"
+                                android:fontFamily="@font/alte"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+                            <EditText
+                                android:id="@+id/ehasiluji"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/round"
+                                android:editable="false"
+                                android:inputType="numberDecimal"
+                                android:padding="8dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/Lpresentase"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/LhasilUji"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="102dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:padding="8dp"
+                                android:text="Presentase"
+                                android:fontFamily="@font/alte"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                            <EditText
+                                android:id="@+id/presentase"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/round"
+                                android:editable="false"
+                                android:inputType="numberDecimal"
+                                android:padding="8dp" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/Lketerangan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Lpresentase"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="102dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:padding="8dp"
+                                android:text="Keterangan"
+                                android:fontFamily="@font/alte"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                            <EditText
+                                android:id="@+id/keterangan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/round"
+                                android:editable="false"
+                                android:inputType="text"
+                                android:padding="8dp" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_below="@+id/Lketerangan">
+
+                            <Button
+                                android:id="@+id/btnUji"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Hitung"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/alte"
+                                android:theme="@style/MyButton" />
+
+                            <Button
+                                android:id="@+id/btnSave"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Simpan"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/alte"
+                                android:theme="@style/MyButton" />
+
+                            <Button
+                                android:id="@+id/btnCancel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Reset"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/alte"
+                                android:theme="@style/MyButton" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:icon="@drawable/ic_profile"
+            android:id="@+id/nav_profil"
+            android:title="Profil" />
+        <item
+            android:icon="@drawable/ic_uji"
+            android:id="@+id/nav_meteran"
+            android:title="Uji Meteran" />
+        <item
+            android:icon="@drawable/ic_panduan"
+            android:id="@+id/nav_panduan"
+            android:title="Panduan" />
+        <item
+            android:icon="@drawable/ic_tentang"
+            android:id="@+id/nav_tentang"
+            android:title="Tentang" />
+        <item android:icon="@drawable/ic_logout"
+            android:id="@+id/nav_logout"
+            android:title="Keluar" />
+
+    </group>
+
+</menu>
